@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		147242DE2084568300B38EE2 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147242DD2084568300B38EE2 /* CategoryViewController.swift */; };
+		14A7C180208693A800F1654C /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7C17F208693A800F1654C /* SwipeTableViewController.swift */; };
 		14B7CCCB2085A1C30089AE89 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7CCCA2085A1C30089AE89 /* Item.swift */; };
 		14B7CCCD2085A1CB0089AE89 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B7CCCC2085A1CB0089AE89 /* Category.swift */; };
 		14D35CF3207DC49500DE6C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D35CF2207DC49500DE6C6C /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		147242DD2084568300B38EE2 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		14A7C17F208693A800F1654C /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		14B7CCCA2085A1C30089AE89 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		14B7CCCC2085A1CB0089AE89 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		14D35CEF207DC49500DE6C6C /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			children = (
 				147242DD2084568300B38EE2 /* CategoryViewController.swift */,
 				14D35CF4207DC49500DE6C6C /* TodoListViewController.swift */,
+				14A7C17F208693A800F1654C /* SwipeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,13 +209,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ToDo/Pods-ToDo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -263,6 +270,7 @@
 				147242DE2084568300B38EE2 /* CategoryViewController.swift in Sources */,
 				14D35CF5207DC49500DE6C6C /* TodoListViewController.swift in Sources */,
 				14D35CF3207DC49500DE6C6C /* AppDelegate.swift in Sources */,
+				14A7C180208693A800F1654C /* SwipeTableViewController.swift in Sources */,
 				14B7CCCD2085A1CB0089AE89 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,10 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FPR3TKV66;
 				INFOPLIST_FILE = ToDo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ApurvaPatel.ToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -430,10 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FPR3TKV66;
 				INFOPLIST_FILE = ToDo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ApurvaPatel.ToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
